@@ -1,0 +1,60 @@
+version: '3'
+
+services:
+
+ electron:
+
+  build:
+
+   context: .
+
+   dockerfile: Dockerfile
+
+
+  volumes:
+
+   - ./cypress:/cypress
+
+   - ./cypress.json:/cypress.json
+
+   - ./package.json:/package.json
+
+ chrome:
+
+  build:
+
+   context: .
+
+   dockerfile: Dockerfile
+
+  command: "--browser chrome"
+
+  volumes:
+
+   - ./cypress:/cypress
+
+   - ./cypress.json:/cypress.json
+
+   - ./package.json:/package.json
+
+ firefox:
+
+  build:
+
+   context: .
+
+   dockerfile: Dockerfile
+
+  command: "--browser firefox --config video=false"
+
+  environment:
+
+   - DEBUG=cypress:server:browsers:firefox-util,cypress:server:util:process_profiler
+
+  volumes:
+
+   - ./cypress:/cypress
+
+   - ./cypress.json:/cypress.json
+
+   - ./package.json:/package.json
