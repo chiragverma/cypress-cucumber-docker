@@ -1,0 +1,8 @@
+{
+  "baseUrl": "http://testyou.in",
+  "ignoreTestFiles": ["*.js", "*.md"],
+  "reporter": "junit",
+  "reporterOptions": {
+    "mochaFile": "test-results/test-output-[hash].xml"
+  }
+}
