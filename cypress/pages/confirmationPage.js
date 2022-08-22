@@ -1,7 +1,4 @@
-// this will not be part of the test
-
 export default class ConfirmPage {
-    
     
 // Create variables for element locators
 message = "GET A ROOM";

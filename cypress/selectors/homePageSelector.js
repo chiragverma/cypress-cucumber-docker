@@ -6,5 +6,6 @@ export default {
     calenderDay: ".calendarDay",
     search: "#s_search",
     nextMonth: ".next-month",
+    selectRoom: ".hotelcard-bttns-rates",
     getRoomElement: "#list-menu-rooms"
 };
