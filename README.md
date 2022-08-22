@@ -22,10 +22,13 @@ Feature: Book a Hotel Successfully
 
 Part 2 - Javascript code
 
+```
 See Code
+```
 
 Part 3 - Automation understanding
 
+```
 Some of the best Automation practices that one should follow are:
 
 A) Use Test Design Patterns and Principles.
@@ -38,3 +41,4 @@ G) Take Screenshots for Failure Investigation.
 H) All Tests Should Be Independent.
 I) Set Up Detailed Test Reporting.
 
+```
