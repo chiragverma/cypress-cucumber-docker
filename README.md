@@ -1,8 +1,5 @@
 # cypress-cucumber-docker
 
-Tests for Automating Login Page using Cypress, Cucumber and Docker
+Tests for Automating Hotel search Page using Cypress, Cucumber and Docker
 
-URL - http://www.testyou.in/SignUp.aspx
-
-
-![alt text](https://github.com/chiragverma/cypress-cucumber-docker/blob/main/LoginPage.png)
+URL - https://www.mrandmrssmith.com/
