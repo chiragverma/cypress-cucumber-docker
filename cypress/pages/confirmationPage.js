@@ -1,10 +1,10 @@
-export default class SecurePage {
+// this will not be part of the test
 
-path = "/secure";
+export default class ConfirmPage {
     
     
 // Create variables for element locators
-message = "Welcome to TestYou - Attempt Unlimited Online Tests";
+message = "GET A ROOM";
 
 // Create independent methods to do actions on elements
 getMessage(){

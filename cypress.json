@@ -1,5 +1,8 @@
 {
-  "baseUrl": "http://testyou.in",
+  "baseUrl": "https://www.mrandmrssmith.com/",
+  "viewportWidth": 1280,
+  "viewportHeight": 720,
+  "defaultCommandTimeout": 10000,
   "ignoreTestFiles": ["*.js", "*.md"],
   "reporter": "junit",
   "reporterOptions": {
