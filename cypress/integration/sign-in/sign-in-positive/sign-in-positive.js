@@ -1,45 +1,34 @@
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
-import LoginPage from '../../../pages/LoginPage';
-import SecurePage from '../../../pages/SecurePage';
+import HomePage from '../../../pages/homePage';
+import ConfirmPage from '../../../pages/confirmationPage';
+import HomeSelector from '../../../selectors/homeSelector.js';
 
-const loginPage = new LoginPage();
-const securePage = new SecurePage();
+const homePage = new HomePage();
 
 
-Given('I open Login Page', () => {
-
-  loginPage.visitLogin();
-
+Given('I open Home Page', () => {
+  cy.visit('/')
 });
 
- 
 
-When('I fill the username input with {string}', (username) => {
-
-  loginPage.typeUsername(username);
-
+When('I fill the place input with {string}', (place) => {
+  cy.get(HomeSelector.place).type(place)
+  cy.get(HomeSelector.suggestion).contains(place).click()
 });
 
- 
-
-When('I fill the password input with {string}', (password) => {
-
-  loginPage.typePassword(password);
-
+When('I fill the nextmonth checkin date {string} and checkout {string} and hit search', (checkin, checkout) => {
+  cy.get(HomeSelector.nextMonth).click()
+  cy.get(HomeSelector.calenderDay).contains(checkin).click({force: true})
+  cy.get(HomeSelector.calenderDay).contains(checkout).click({force: true})
+  cy.get(HomeSelector.search).click();
 });
 
- 
 
-When('I click on Login button', () => {
-
-  loginPage.clickLogin();
-
+When('I select the room', () => {
+  cy.get('.hotelcard-bttns-rates').eq(1).click()
 });
 
- 
 
-Then('I see {string} message', (expected) => {
-
-  const message = securePage.getMessage();
-
+Then('I should be on Get A Room page', (expected) => {
+  cy.get(HomeSelector.getRoomElement).contains('Get a room')
 });
