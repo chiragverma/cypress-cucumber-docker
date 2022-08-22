@@ -16,8 +16,9 @@ Feature: Book a Hotel Successfully
     Given I open Home Page
     When I fill the place input with "London"
     And I fill the nextmonth checkin date "10" and checkout "14" and hit search
-    And I select the room
-    Then I should be on Get A Room page
+    And I select the room and click on Book now button and confirm booking
+    And I enter all payment details and click on pay now button
+    Then I should be on Confirmed Booking Page
 ```
 
 Part 2 - Javascript code
