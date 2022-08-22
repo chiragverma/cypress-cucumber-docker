@@ -9,6 +9,7 @@ This test consists three parts as below:
 
 Part 1 - BDD scenario
 
+```
 Feature: Book a Hotel Successfully
   @e2e-test
   Scenario: Book a Hotel in any city
@@ -17,6 +18,7 @@ Feature: Book a Hotel Successfully
     And I fill the nextmonth checkin date "10" and checkout "14" and hit search
     And I select the room
     Then I should be on Get A Room page
+```
 
 Part 2 - Javascript code
 
