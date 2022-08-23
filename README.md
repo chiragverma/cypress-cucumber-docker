@@ -41,7 +41,6 @@ F) Name tests wisely.
 G) Take Screenshots for Failure Investigation.
 H) All Tests Should Be Independent.
 I) Set Up Detailed Test Reporting.
-
 ```
 
 
