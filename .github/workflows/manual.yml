@@ -16,4 +16,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Run Tests Manually
-      run: yarn cypress install --force && npx cypress run
+      run:  npx cypress run
