@@ -58,6 +58,3 @@ cd cypress-cucumber-docker
 npx cypress run
 ```
 
-# To trigger tests manually on the CI:
-Go to https://github.com/chiragverma/cypress-cucumber-docker/actions and trigger the manual workflow
-
