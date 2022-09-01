@@ -12,6 +12,7 @@ When('I fill the place input with {string}', (place) => {
 });
 
 When('I fill the nextmonth checkin date {string} and checkout {string} and hit search', (checkin, checkout) => {
+  cy.get(HomePageSelector.checkin).click()
   cy.get(HomePageSelector.nextMonth).click().click()
   cy.get(HomePageSelector.calenderDay).contains(checkin).click({force: true})
   cy.get(HomePageSelector.calenderDay).contains(checkout).click({force: true})
